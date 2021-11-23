@@ -22,7 +22,8 @@ function Example() {
         value: "10"
     };
     const sandbox = "sb-3lqf98674441@business.example.com"
-    const clientID = "Ab9rJrOVyueKjT6hZh9VH-MgRZvMU6lQrJgB6oqJ3ujh0T7RCt52_mtTE9j8FlEsXDlrXWf5Flpu-6Ae"
+    let clientID = "Ab9rJrOVyueKjT6hZh9VH-MgRZvMU6lQrJgB6oqJ3ujh0T7RCt52_mtTE9j8FlEsXDlrXWf5Flpu-6Ae"
+    clientID = "ASKubZJSMqA7_0E2HE3yRKIej3xO92wyK6j6PKSfyyDZljGO23sh_xnOyHH7wIYHR2nPSLZjTZiihw6B"
     const client = {
         sandbox:
             "ASKubZJSMqA7_0E2HE3yRKIej3xO92wyK6j6PKSfyyDZljGO23sh_xnOyHH7wIYHR2nPSLZjTZiihw6B",
@@ -176,18 +177,16 @@ function Example() {
         document.body.appendChild(script);
     };
 
-    return (
-        <div>
-            <div ref={paypal}></div>
-        </div>
-    );
-
-
+    // return (
+    //     <div>
+    //         <div ref={paypal}></div>
+    //     </div>
+    // );
 
     return (<>
-    <PayPalButton
+        <PayPalButton
             options={{
-                "client-id": clientID, 
+                "client-id": clientID,
                 currency: "USD",
                 components: "buttons",
                 intent: "authorize",

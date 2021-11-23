@@ -28,13 +28,11 @@ export default class MyDocument extends Document {
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js"></script>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.js"></script> */}
 
-                    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD"></script>
+                    <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
                     <script src="https://www.paypalobjects.com/api/checkout.js" />
-                    {/* <script src="https://www.paypal.com/sdk/js?client-id=AaJMejIDjhumOr48XsycjfvQegxAku1dHdrA0DNfkqFSg7bFFkpJTnnwyaLIGUFsPijWx1g51gxp9F-5&currency=USD" data-namespace="paypal_sdk"></script> */}
-                    {/* <script src="https://www.paypal.com/sdk/js?client-id=AaJMejIDjhumOr48XsycjfvQegxAku1dHdrA0DNfkqFSg7bFFkpJTnnwyaLIGUFsPijWx1g51gxp9F-5&components=buttons&disable-funding=credit,card" data-namespace="paypal_sdk"></script> */}
+                    {/* <script src="https://www.paypal.com/sdk/js?client-id=AaJMejIDjhumOr48XsycjfvQegxAku1dHdrA0DNfkqFSg7bFFkpJTnnwyaLIGUFsPijWx1g51gxp9F-5&currency=USD&components=buttons&disable-funding=credit,card" data-namespace="paypal_sdk"></script> */}
                     {/* <script src="https://www.paypal.com/sdk/js?client-id=ASKubZJSMqA7_0E2HE3yRKIej3xO92wyK6j6PKSfyyDZljGO23sh_xnOyHH7wIYHR2nPSLZjTZiihw6B&currency=CAD&components=buttons&disable-funding=credit,card" data-namespace="paypal_sdk"></script> */}
                     {/* <script src="https://www.paypal.com/sdk/js?client-id=test"></script> */}
-                    {/* <script>paypal.Buttons().render('body');</script> */}
 
                 </Head>
                 <body>
