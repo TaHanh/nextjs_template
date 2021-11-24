@@ -6,7 +6,6 @@ import styles from "../static/styles/name.module.scss"
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Example from "../components/example"
 
 function ActiveAccount() {
    const [email, setEmail] = React.useState("");
@@ -26,8 +25,6 @@ function ActiveAccount() {
 
    return (
       <Admin>
-         {check ? <Example/> : null}
-         {/* {check ? <div id="paypal-button-container"></div> : null} */}
          <Link
             // activeClassName={locale === "vi-VN"}
             href={`/active-account?language=vi`}
