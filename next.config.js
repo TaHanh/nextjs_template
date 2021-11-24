@@ -12,6 +12,18 @@ module.exports = {
     })
     return config
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+    ],
+  },
   i18n,
   output: {
     path: path.resolve(__dirname, 'app/dist'), // Where all the output files get dropped after webpack is done with them
